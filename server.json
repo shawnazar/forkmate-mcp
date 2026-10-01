@@ -1,10 +1,14 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.forkmate/forkmate",
-  "title": "ForkMate",
-  "description": "Log what you ate by talking to your AI assistant — calories and macros, completely free.",
-  "version": "0.1.5",
+  "title": "Forkmate",
+  "description": "Free AI calorie & macro tracker: tell your AI what you ate and it logs it to your private food diary",
+  "version": "0.1.6",
   "websiteUrl": "https://forkmate.ai",
+  "repository": {
+    "url": "https://github.com/shawnazar/forkmate-mcp",
+    "source": "github"
+  },
   "icons": [
     {
       "src": "https://forkmate.ai/favicon.svg",
@@ -24,7 +28,7 @@
     "ai.forkmate": {
       "canonical_url": "https://mcp.forkmate.ai/",
       "tagline": "Track calories by talking to your AI assistant — free",
-      "long_description": "ForkMate turns any MCP-capable AI — Claude, Cursor, or your own — into an effortless food tracker. Just say what you ate in plain language and your assistant logs it to your private diary, tallying calories and macros MyFitnessPal-style. See it all any time in a clean web diary at app.forkmate.ai.\n\nAsk \"how many calories today?\" or \"what did I eat this week?\" and it recalls your day or a date range with per-day totals. Need real numbers? It can search USDA FoodData Central and Open Food Facts for grounded macros, or look up a packaged food by barcode, and every food names the public source its numbers came from. In the web app you confirm each entry before it saves; over MCP your assistant logs what you asked it to, and you can correct or delete any entry afterwards. You can correct or remove an entry, keep a pantry of what you actually have, and set dietary preferences your assistant respects.\n\nWhy it's different: logging happens in the conversation you're already having — no forms, no database to search, no ads. The food data is open and public, not a black box. It's built for people who train, not just diet, and it stays encouraging rather than obsessive. Your data is yours — every call is scoped to your authenticated account, writes only ever touch your own diary, and export is free.\n\nForkMate is free. All of it — your complete history, unlimited entries, barcode scanning, chain-restaurant menus. No credit card, no trial timer, no paid plan.",
+      "long_description": "Forkmate turns any MCP-capable AI — Claude, Cursor, or your own — into an effortless food tracker. Just say what you ate in plain language and your assistant logs it to your private diary, tallying calories and macros MyFitnessPal-style. See it all any time in a clean web diary at app.forkmate.ai.\n\nAsk \"how many calories today?\" or \"what did I eat this week?\" and it recalls your day or a date range with per-day totals. Need real numbers? It can search USDA FoodData Central and Open Food Facts for grounded macros, or look up a packaged food by barcode, and every food names the public source its numbers came from. In the web app you confirm each entry before it saves; over MCP your assistant logs what you asked it to, and you can correct or delete any entry afterwards. You can correct or remove an entry, keep a pantry of what you actually have, and set dietary preferences your assistant respects.\n\nWhy it's different: logging happens in the conversation you're already having — no forms, no database to search, no ads. The food data is open and public, not a black box. It's built for people who train, not just diet, and it stays encouraging rather than obsessive. Your data is yours — every call is scoped to your authenticated account, writes only ever touch your own diary, and export is free.\n\nForkmate is free. All of it — your complete history, unlimited entries, barcode scanning, chain-restaurant menus. No credit card, no trial timer, no paid plan.",
       "keywords": [
         "calorie tracker",
         "macro tracker",
@@ -68,9 +72,9 @@
         {
           "name": "whoami",
           "title": "Who am I",
-          "summary": "Diagnostic: confirms the connected ForkMate account (read-only).",
+          "summary": "Diagnostic: confirms the connected Forkmate account (read-only).",
           "readOnly": true,
-          "description": "Confirms which ForkMate account your AI is connected to — a read-only diagnostic that returns your account id and scopes."
+          "description": "Confirms which Forkmate account your AI is connected to — a read-only diagnostic that returns your account id and scopes."
         },
         {
           "name": "get_day",
