@@ -108,10 +108,11 @@ calories today?".
 | `delete_meal` | Remove an entry from your diary |
 | `get_day` | Read one day's diary with calorie and macro totals |
 | `get_range` | Read a date range with per-day totals |
-| `get_preferences` | Read your dietary preferences |
+| `get_preferences` | Read your food profile: likes, dislikes, allergies and diet style |
+| `update_preferences` | Add or remove likes, dislikes and allergies, or set your diet style |
+| `get_usual_foods` | Read the foods you eat most often and the last week's foods |
 | `search_foods` | Search USDA FoodData Central and Open Food Facts |
 | `lookup_barcode` | Look up a packaged food by barcode (Open Food Facts) |
-| `get_pantry` · `add_pantry_item` · `remove_pantry_item` | Keep a list of foods you have on hand |
 | `whoami` | Confirm which account is connected |
 
 ## Prompts
